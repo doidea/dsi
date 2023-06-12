@@ -3,7 +3,7 @@
 ### 脚本说明：
 
 * 原理简述：使用[Dnsmasq](http://thekelleys.org.uk/dnsmasq/doc.html)的`DNS`将网站解析劫持到[SNIproxy](https://github.com/dlundquist/sniproxy)反向代理的页面上，搭建流媒体解锁服务端
-* 特性：脚本默认已配置`Netflix`解锁，如需增删流媒体域名请编辑文件`/etc/dnsmasq.d/custom_netflix.conf`和`/etc/sniproxy.conf`
+* 特性：脚本默认已配置`Netflix`和`Disney`解锁，如需增删流媒体域名请编辑文件`/etc/dnsmasq.d/custom_netflix.conf`和`/etc/sniproxy.conf`
 * 脚本支持系统：`CentOS6+, Debian8+, Ubuntu16+`
     * 理论上支持上述系统及不限制虚拟化类型，如有问题请反馈
     * 如果脚本最后显示的 `IP` 和实际公网 `IP` 不符，请修改一下文件`/etc/sniproxy.conf`中的 IP 地址
